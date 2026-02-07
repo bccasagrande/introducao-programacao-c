@@ -1,4 +1,18 @@
-## Tema 2 – Fundamentos e Técnicas Avançadas
+#include <stdio.h>
 
-Trabalho desenvolvido em linguagem C para cadastro de cartas
-do jogo Super Trunfo.
+int main() {
+    int populacao;
+    float pib, area;
+
+    printf("Populacao: ");
+    scanf("%d", &populacao);
+
+    printf("PIB: ");
+    scanf("%f", &pib);
+
+    printf("Area: ");
+    scanf("%f", &area);
+
+    printf("Cadastro realizado com sucesso!\n");
+    return 0;
+}
