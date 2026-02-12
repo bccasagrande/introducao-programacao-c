@@ -1,8 +1,17 @@
 #include <stdio.h>
 
 int main() {
+    char estado[30];
+    char cidade[30];
     int populacao;
     float pib, area;
+    float densidade, pibPerCapita;
+
+    printf("Estado: ");
+    scanf("%s", estado);
+
+    printf("Cidade: ");
+    scanf("%s", cidade);
 
     printf("Populacao: ");
     scanf("%d", &populacao);
@@ -13,6 +22,11 @@ int main() {
     printf("Area: ");
     scanf("%f", &area);
 
-    printf("Cadastro realizado com sucesso!\n");
+    densidade = populacao / area;
+    pibPerCapita = pib / populacao;
+
+    printf("\nDensidade populacional: %.2f\n", densidade);
+    printf("PIB per capita: %.2f\n", pibPerCapita);
+
     return 0;
 }
