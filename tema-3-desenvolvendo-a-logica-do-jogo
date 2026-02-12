@@ -1,1 +1,27 @@
+#include <stdio.h>
 
+int main() {
+    int carta1, carta2, opcao;
+
+    printf("Escolha o atributo:\n");
+    printf("1 - Populacao\n");
+    printf("2 - PIB\n");
+    scanf("%d", &opcao);
+
+    printf("Carta 1: ");
+    scanf("%d", &carta1);
+
+    printf("Carta 2: ");
+    scanf("%d", &carta2);
+
+    if (opcao == 1 || opcao == 2) {
+        if (carta1 > carta2)
+            printf("Carta 1 venceu!\n");
+        else
+            printf("Carta 2 venceu!\n");
+    } else {
+        printf("Opcao invalida!\n");
+    }
+
+    return 0;
+}
